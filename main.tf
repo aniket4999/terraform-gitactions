@@ -23,14 +23,15 @@ resource "aws_s3_bucket" "example_bucket" {
 
 terraform {
   backend "s3" {
-    bucket         = [aws_s3_bucket.example_bucket.name] # Replace with your S3 bucket name
+#    bucket         = [aws_s3_bucket.example_bucket.name] # Replace with your S3 bucket name
+    bucket         = di-love01
     key            = "/" # Path within the bucket for the state file
     region         = "us-east-1"                 # AWS region of your S3 bucket
     encrypt        = true                        # Encrypt the state file at rest
 #    dynamodb_table = "your-lock-table"           # DynamoDB table for state locking (optional but recommended)
-    depends_on = [
-    aws_s3_bucket.example_bucket
-  ]
+#    depends_on = [
+#    aws_s3_bucket.example_bucket
+#  ]
 #
   }
 }
