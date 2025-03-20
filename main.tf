@@ -24,7 +24,7 @@ resource "aws_s3_bucket" "example_bucket" {
 terraform {
   backend "s3" {
 #    bucket         = [aws_s3_bucket.example_bucket.name] # Replace with your S3 bucket name
-    bucket         = di-love01
+    bucket         = "di-love01"
     key            = "/" # Path within the bucket for the state file
     region         = "us-east-1"                 # AWS region of your S3 bucket
     encrypt        = true                        # Encrypt the state file at rest
