@@ -7,12 +7,12 @@ resource "aws_instance" "ec201" {
     instance_type = var.instance_type
     
     tags = {
-    Name        = "test"
+    Name        = "testwithgit007"
   }
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = "your-unique-bucket-name" # Replace with your unique bucket name
+  bucket = "diandy4999" # Replace with your unique bucket name
   acl    = "private" # Adjust the ACL as needed (e.g., "public-read")
 
   tags = {
