@@ -1,3 +1,4 @@
+/*
 provider "aws" {
     region = "us-east-1"
 }
@@ -10,9 +11,9 @@ resource "aws_instance" "ec201" {
     Name        = "testwithgit007"
   }
 }
-
+*/
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = "diandy4999" # Replace with your unique bucket name
+  bucket = "diandy499999" # Replace with your unique bucket name
   acl    = "private" # Adjust the ACL as needed (e.g., "public-read")
 
   tags = {
@@ -21,6 +22,7 @@ resource "aws_s3_bucket" "example_bucket" {
   }
 }
 
+/*
 terraform {
   backend "s3" {
 #    bucket         = [aws_s3_bucket.example_bucket.name] # Replace with your S3 bucket name
@@ -36,3 +38,4 @@ terraform {
   }
 }
 
+*/
