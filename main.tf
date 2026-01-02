@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "example_bucket" {
   acl    = "private" # Adjust the ACL as needed (e.g., "public-read")
 
   tags = {
-    Name        = "ExampleBucket"
+    Name        = "ExampleBucket1"
     Environment = "Dev"
   }
 }
